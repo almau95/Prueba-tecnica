@@ -2,19 +2,28 @@
 
 Este proyecto automatiza el inicio de sesión y registro en la aplicación MaterialLoginExample.apk utilizando WebdriverIO, Appium y Cucumber.
 
-## Requisitos
+# Requisitos
 
-- Node.js
-- Appium
-- WebdriverIO
-- Emulador o dispositivo físico configurado
-- Git
+Node.js: Instalación de Node.js
+Appium: Instalación de Appium
+WebdriverIO: Incluido como dependencia en el proyecto
+Cucumber: Instalado como parte de las dependencias
+Emulador o dispositivo físico Android configurado para pruebas
+Git para la clonación y gestión del repositorio
 
 ## Instalación
 
 1. Clona este repositorio.
+	git clone https://github.com/almau95/Prueba-tecnica-APP.git
+
 2. Instala las dependencias con `npm install`.
 3. Configura Appium y WebdriverIO.
+4. Asegúrate de que el archivo wdio.conf.js esté configurado correctamente para tu dispositivo o emulador:
+
+	platformName: Debe ser "Android".
+	deviceName: Nombre de tu dispositivo o emulador.
+	app: Ruta a la aplicación MaterialLoginExample.apk.
+	automationName: "UiAutomator2" para Android.
 
 ## Ejecución de Pruebas
 
