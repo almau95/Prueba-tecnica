@@ -339,3 +339,6 @@ exports.config = {
     * Hook that gets executed after a WebdriverIO assertion happened.
     * @param {object} params information about the assertion that was executed, including its results
     */
+    // afterAssertion: function(params) {
+    // }
+}
