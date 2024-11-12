@@ -31,3 +31,16 @@ Para ejecutar las pruebas:
 
 ```bash
 npx wdio run wdio.conf.js
+
+***Integración Continua (CI) con GitHub Actions***
+Este proyecto incluye un pipeline automatizado de pruebas de UI configurado con GitHub Actions. Cada vez que se realiza un push o un pull request hacia la rama main, se ejecuta el flujo de CI para:
+
+	Instalar dependencias
+	Iniciar el servidor Appium
+	Ejecutar las pruebas de UI automáticamente
+	Ejecutar el pipeline
+
+El pipeline se ejecuta automáticamente en GitHub Actions cuando:
+
+	Se realiza un push a la rama main.
+	Se crea un pull request hacia la rama main.
